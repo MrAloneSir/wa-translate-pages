@@ -1,49 +1,180 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>技术支持 - WhatsApp外贸翻译助手</title>
-    <style>
-        body {font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;max-width:900px;margin:30px auto;padding:0 20px;color:#333;line-height:1.7;}
-        h1 {color:#222;border-bottom:1px solid #eee;padding-bottom:10px;}
-        h2 {font-size:1.3em;margin-top:30px;}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>技术支持 | WhatsApp外贸翻译助手</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f8fafc;
+    --border: #e2e8f0;
+    --text: #1e293b;
+    --muted: #64748b;
+    --heading: #0f172a;
+    --accent: #2563eb;
+    --tip-bg: #eff6ff;
+    --tip-border: #2563eb;
+    --warn-bg: #fffbeb;
+    --warn-border: #f59e0b;
+    --warn-text: #92400e;
+    --code-bg: #f1f5f9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--surface);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--bg);
+    padding: 48px 56px 72px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  }
+  h1 { font-size: 26px; color: var(--heading); margin: 0 0 8px; line-height: 1.35; }
+  .meta { color: var(--muted); font-size: 14px; margin-bottom: 36px; }
+  h2 {
+    font-size: 20px;
+    color: var(--heading);
+    margin-top: 42px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border);
+  }
+  h3 { font-size: 16px; color: var(--accent); margin-top: 26px; margin-bottom: 6px; }
+  p { margin: 8px 0; }
+  ol, ul { padding-left: 22px; margin: 8px 0; }
+  li { margin: 5px 0; }
+  strong { color: var(--heading); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code {
+    background: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-size: 13px;
+    color: #b91c1c;
+  }
+  .intro {
+    background: var(--tip-bg);
+    border-left: 4px solid var(--tip-border);
+    padding: 12px 18px;
+    margin: 16px 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .note {
+    background: var(--warn-bg);
+    border-left: 4px solid var(--warn-border);
+    color: var(--warn-text);
+    padding: 12px 18px;
+    margin: 14px 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .divider { border: 0; border-top: 1px dashed var(--border); margin: 36px 0; }
+  .footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+  @media (max-width: 720px) {
+    .container { padding: 24px 18px 40px; }
+    h1 { font-size: 22px; }
+  }
+  @media print {
+    body { background: #fff; font-size: 12px; }
+    .container { box-shadow: none; max-width: 100%; padding: 0; }
+  }
+</style>
 </head>
 <body>
-<h1>技术支持 | WhatsApp外贸翻译助手</h1>
-<p>更新日期：2026-10-10</p>
+<div class="container">
 
-<h2>📌 产品介绍</h2>
-<p>WhatsApp外贸翻译助手是Chrome浏览器扩展，用于web.whatsapp.com网页端实时翻译聊天消息，帮助外贸人员快速和海外客户沟通。</p>
+  <h1>技术支持 | WhatsApp外贸翻译助手</h1>
+  <div class="meta"><strong>更新日期：</strong>2026-11-24</div>
 
-<h2>❓ 常见问题 FAQ</h2>
-<h3>1. 插件不生效，看不到翻译？</h3>
-<ul>
-    <li>确认打开的是 web.whatsapp.com，WhatsApp桌面客户端无效；</li>
-    <li>刷新WhatsApp网页；</li>
-    <li>确认插件已在扩展管理页面启用；</li>
-    <li>关闭其他冲突翻译类插件。</li>
-</ul>
+  <h2>📌 产品介绍</h2>
+  <p>WhatsApp外贸翻译助手是 Chrome 浏览器扩展，用于 <code>web.whatsapp.com</code> 网页端实时翻译聊天消息（含文字与语音），帮助外贸人员快速与海外客户沟通。</p>
+  <div class="intro">
+    <p><strong>使用前须知：</strong>翻译与语音功能需要登录账号且套餐有效。首次使用请在插件选项页注册或登录；未登录状态下插件不会翻译聊天内容。</p>
+  </div>
 
-<h3>2. 翻译失败/无返回结果</h3>
-<ul>
-    <li>检查网络，翻译API需要联网；</li>
-    <li>部分特殊语种、长文本可能翻译超时；</li>
-    <li>可尝试重新刷新聊天页面。</li>
-</ul>
+  <h2>❓ 常见问题 FAQ</h2>
 
-<h3>3. 插件如何关闭/卸载？</h3>
-<p>Chrome扩展管理页面找到本插件，可关闭或者直接移除。卸载后所有本地配置清除。</p>
+  <h3>1. 插件不生效，看不到翻译？</h3>
+  <p>请按以下顺序排查：</p>
+  <ol>
+    <li><strong>确认已登录且套餐有效</strong>（最常见原因）：打开插件选项页查看账号状态。未登录或套餐到期时，插件会自动停用翻译功能，聊天消息不会显示译文。</li>
+    <li>确认打开的是 <code>web.whatsapp.com</code>，WhatsApp 桌面客户端和手机端无效。</li>
+    <li>刷新 WhatsApp 网页，使插件重新加载会话状态。</li>
+    <li>确认插件已在 <code>chrome://extensions</code> 启用。</li>
+    <li>确认选项页中的「全局开关」和「自动翻译」已开启。</li>
+    <li>关闭其他翻译类扩展，避免相互冲突。</li>
+  </ol>
 
-<h2>📩 联系我们</h2>
-<p>遇到BUG、功能建议、问题反馈，请发送邮件至：<strong>jin623935663@gmail.com</strong></p>
-<p>邮件建议附带：Chrome版本、问题截图、操作步骤，方便快速定位问题。</p>
+  <h3>2. 翻译失败 / 无返回结果</h3>
+  <ol>
+    <li>检查网络连接——翻译请求需要联网发送至翻译服务。</li>
+    <li>确认账号未到期、额度未用尽（到期提示「套餐已到期」时请续订）。</li>
+    <li>部分特殊语种、超长文本可能翻译超时（默认超时 8 秒），可尝试刷新聊天页面后重试。</li>
+    <li>如您使用了自行配置的第三方 API Key，请确认 Key 有效、余额充足、所选服务商可访问。</li>
+    <li>可在选项页切换翻译服务商后重试。</li>
+  </ol>
 
-<h2>🔗 相关链接</h2>
-<p><a href="privacy.html">隐私政策</a></p>
+  <h3>3. 语音消息翻译失败 / 没有「翻译语音」按钮</h3>
+  <ol>
+    <li>语音翻译需要<strong>专业版套餐</strong>且有剩余语音时长，请先在选项页确认套餐与余额。</li>
+    <li>「翻译语音」按钮仅在客户发送的语音消息下方显示，自己的语音不出按钮。</li>
+    <li>若提示「未捕获到语音数据」，请先手动播放一次该条语音，再点击「翻译语音」重试。</li>
+    <li>语音翻译功能独立于文字翻译开关，无需开启自动翻译即可使用。</li>
+  </ol>
 
-<h2>⚠️ 免责声明</h2>
-<p>本扩展仅提供文本翻译辅助，翻译结果仅供参考，不承担商务沟通产生的任何直接或间接损失。</p>
+  <h3>4. 登录、账号与设备管理</h3>
+  <ol>
+    <li>注册需要邮箱接收验证码；验证码由服务端发送，插件不保存明文验证码。</li>
+    <li>可在选项页「设备管理」查看已授权设备，移除不再使用的设备。</li>
+    <li>忘记密码或需要注销账号，请在选项页「账号管理」中操作；如遇到障碍，请邮件联系我们。</li>
+  </ol>
+
+  <h3>5. 插件如何关闭 / 卸载？</h3>
+  <p>在 Chrome 扩展管理页面（<code>chrome://extensions</code>）找到本插件，可关闭或直接移除。</p>
+  <div class="note">
+    <p>卸载会清除本机浏览器中的全部本地数据（配置、登录会话、客户语言偏好、翻译缓存）。<strong>注意：</strong>服务端账号资料、常用短语及订阅信息<strong>不会</strong>因卸载扩展而删除。如需彻底删除，请先在插件内注销账号，或联系我们协助处理。</p>
+  </div>
+
+  <h3>6. 数据隐私与开关</h3>
+  <ol>
+    <li>自动翻译、发送前翻译、语音翻译和本地缓存均可在选项页独立关闭或清除。</li>
+    <li>关闭全部翻译开关后，插件不会读取或发送聊天内容。</li>
+    <li>详见 <a href="PRIVACY_POLICY.html">隐私政策（含数据收集醒目披露）</a>。</li>
+  </ol>
+
+  <hr class="divider">
+
+  <h2>📩 联系我们</h2>
+  <p>遇到 BUG、功能建议、问题反馈，请发送邮件至：<strong>jin623935663@gmail.com</strong></p>
+  <p>为便于快速定位问题，邮件建议附带：</p>
+  <ul>
+    <li>Chrome 版本（可在 <code>chrome://version</code> 查看）</li>
+    <li>问题截图（含完整错误提示文字）</li>
+    <li>操作步骤与复现频率</li>
+    <li>账号状态（是否登录、套餐类型）——涉及账号或翻译权限问题时</li>
+    <li>使用的翻译服务商（如使用了自有 API Key）——涉及翻译失败问题时</li>
+  </ul>
+
+  <h2>🔗 相关链接</h2>
+  <ul>
+    <li><a href="PRIVACY_POLICY.html">隐私政策</a></li>
+  </ul>
+
+  <h2>⚠️ 免责声明</h2>
+  <p>本扩展提供文本及语音翻译辅助，翻译结果由机器翻译生成，仅供参考，不保证与原文完全一致。本扩展不对因使用翻译结果而产生的商务沟通损失承担直接或间接责任。本扩展不是 WhatsApp 官方产品，与 WhatsApp / Meta 无隶属或授权关系。</p>
+
+  <div class="footer">
+    <p>WhatsApp 外贸翻译助手 · 技术支持 · 2026-11-24</p>
+  </div>
+
+</div>
 </body>
 </html>
